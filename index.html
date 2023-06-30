@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
     <div class="main-container">
         <div class="image-container">
             <div class="logo-container">
-                <img src="images/logo.png" alt="logo">
+                <img src="images/logo.png" alt="">
             </div>
         </div>
         <div class="form-container">
             <header class="form-header">
+                <div></div>
                 <div>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, delectus?
                 </div>
@@ -42,11 +44,11 @@
                         </div>
                         <div class="inputs">
                             <label for="enter-password">Password:<sup class="required">*</sup></label>
-                            <input type="password" name="enter-password" id="enter-password" required minlength="8">
+                            <input type="password" name="enter-password" id="enter-password" required minlength="8" autocomplete="new-password">
                         </div>
                         <div class="inputs">
                             <label for="confirm-password">Confirm Password:<sup class="required">*</sup></label>
-                            <input type="password" name="confirm-password" id="confirm-password" required minlength="8">
+                            <input type="password" name="confirm-password" id="confirm-password" required minlength="8" autocomplete="new-password">
                         </div>
                     </div>
                 </div>
