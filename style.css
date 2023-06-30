@@ -24,6 +24,9 @@ body {
     flex:1.79;
     background-image: url(/images/1.png);
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 .form-container {
@@ -184,16 +187,36 @@ button[type="submit"]:active {
     color: #5c4c85;
 }
 
+.logo-container {
+    width: 100%;
+    background-image: url(/images/logo.png);
+    background-repeat: no-repeat;
+    margin: 96px;
+
+}
 
 @media screen and (max-width: 768px) {
     .main-container {
         flex-direction: column;
+        position: relative;
     }
 
     .form-header {
         font-size: 1.5rem;
         background-image: url(/images/1.png);
+        display: relative;
+        padding: 1.5rem;
     }
+
+    .form-header div {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    
 
     .image-container {
         display: none;
